@@ -15,7 +15,7 @@ const Hero = () => (
                     <h2 className="color">Hello, I Am</h2>
                     <h1 className="color-pink">Arden Monaghan</h1>
                     <p className="color">3rd year Computing Science Specialization student at the University of Alberta. </p>
-                    <div className='hero-icons'>
+                    <div className='icons'>
 
                     
                     </div>
