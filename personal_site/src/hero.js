@@ -1,4 +1,6 @@
 import Header from './header';
+// import IconLinkedin from './icons/linkedin';
+// import IconGithub from './icons/github';
 
 
 const Hero = () => (
@@ -16,8 +18,8 @@ const Hero = () => (
                     <h1 className="color-pink">Arden Monaghan</h1>
                     <p className="color">3rd year Computing Science Specialization student at the University of Alberta. </p>
                     <div className='icons'>
-
-                    
+                        {/* <IconLinkedin />
+                        <IconGithub /> */}
                     </div>
                 </div>
             </div>
