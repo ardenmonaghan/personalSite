@@ -48,7 +48,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
     align-items: center;
-    padding: 8rem 0rem;
+    padding: 10rem 0rem;
 }
 
 
@@ -68,7 +68,7 @@
 .hero-text p {
     font-size: 3.0rem;
     font-weight: 400;
-
+    line-height: 1.5;
 }
 
 .hero-image {
@@ -85,6 +85,7 @@
 }
 
 .hero-icons {
+    padding-top: 2rem;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -141,5 +142,10 @@
 
 /* Projects Section */
 
-
+.projects {
+    background-color: #000;
+    padding: 8rem 0;
+    border-top: 2px solid #de080837;
+    height: 100vh;
+}
 
