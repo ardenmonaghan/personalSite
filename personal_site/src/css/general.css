@@ -28,3 +28,16 @@ body {
   color: #fff;
 }
 
+.color-pink {
+  color: #FF6666;
+}
+
+.glow-effect {
+  box-shadow: 0 0 1.5rem 0.5rem rgb(255, 102, 102,0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 2.5rem 0.1rem rgba(239, 81, 81, 0.9);
+}
+
