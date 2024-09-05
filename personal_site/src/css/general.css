@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: 400;
   line-height: 1;
+  /* background-color: #111; */
 }
 
 .container {
@@ -32,12 +31,38 @@ body {
   color: #FF6666;
 }
 
-.glow-effect {
-  box-shadow: 0 0 1.5rem 0.5rem rgb(255, 102, 102,0.7);
+/* .glow-effect {
+  box-shadow: 0 0 1.5rem 0.5rem rgba(209, 161, 161, 0.7);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 .glow-effect:hover {
   box-shadow: 0 0 2.5rem 0.1rem rgba(239, 81, 81, 0.9);
+} */
+
+.glow-effect {
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    box-shadow: 0 0 3px rgba(239, 81, 81, 0.2), 0 0 6px rgba(239, 81, 81, 0.2), 0 0 9px rgba(239, 81, 81, 0.2), 0 0 12px rgba(239, 81, 81, 0.3), 0 0 18px rgba(239, 81, 81, 0.3), 0 0 24px rgba(239, 81, 81, 0.4), 0 0 30px rgba(239, 81, 81, 0.4);
+  }
+  to {
+    box-shadow: 0 0 5px rgba(239, 81, 81, 0.3), 0 0 10px rgba(239, 81, 81, 0.3), 0 0 15px rgba(239, 81, 81, 0.3), 0 0 20px rgba(239, 81, 81, 0.4), 0 0 35px rgba(239, 81, 81, 0.4), 0 0 40px rgba(239, 81, 81, 0.5), 0 0 50px rgba(239, 81, 81, 0.5);
+  }
+}
+
+.font-size-p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.font-size-h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.font-size-h2 {
+  font-size: 3rem;
+}
