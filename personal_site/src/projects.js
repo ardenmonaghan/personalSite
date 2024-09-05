@@ -1,11 +1,25 @@
 import React from 'react';
 
 
+
+const Project = ({ name, description, link, image}) => {
+    return (
+        <div className='project-card'>
+            <div className='project-info'>
+                <h3>{name}</h3>
+                <p>{description}</p>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    View Project
+                </a>
+            </div>
+        </div>
+    )
+}
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: 'Project 1',
+      name: 'MentorMatch UAlberta',
       description: 'Description of Project 1',
       link: 'https://project1.com'
     },
@@ -21,18 +35,13 @@ const Projects = () => {
   return (
     <section className="projects">
         <div className='container'>
-            <h2>My Projects</h2>
-            <ul>
-                {projects.map(project => (
-            <li key={project.id}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </li>
-        ))}
-            </ul>
+            <h2 className='color-pink'>My Work</h2>
+            <h1 className='font-size-h1 color'>Projects</h1> 
+            <div className='project-grid'>
+                <Project name={projects[0].name} description={projects[0].description} link={projects[0].link} image={projects[0].image}/>
+                <Project name={projects[0].name} description={projects[0].description} link={projects[0].link} image={projects[0].image}/>
+                <Project name={projects[0].name} description={projects[0].description} link={projects[0].link} image={projects[0].image}/>
+            </div>
         </div>
     </section>
   );

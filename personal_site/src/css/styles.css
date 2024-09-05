@@ -144,8 +144,16 @@
 
 .projects {
     background-color: #000;
-    padding: 8rem 0;
+    padding: 8rem 0rem;
     border-top: 2px solid #de080837;
     height: 100vh;
+}
+
+.project-grid {
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.5rem;
+    align-items: center;
 }
 

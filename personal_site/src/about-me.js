@@ -21,7 +21,7 @@ const AboutMe = () => {
   return (
     <section className="about-me">
         <div className='container color'>
-            <h2>Overview</h2>
+            <h2 className='color-pink'>Overview</h2>
             <h1 className='font-size-h1 about-me-title'>About Me</h1>
             <div className='about-me-grid'>
 
