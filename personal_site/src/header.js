@@ -10,10 +10,10 @@ const Header = () => {
                         <a className="header-font" href="#">About</a>
                     </li>
                     <li>
-                        <a className="header-font" href="#">Resume</a>
+                        <a className="header-font" href="#">Contact</a>
                     </li>
                     <li>
-                        <a className="header-font" href="#">Contact</a>
+                        <a className="header-font header-resume" href="#">Resume</a>
                     </li>
                 </ul>
             </div>
