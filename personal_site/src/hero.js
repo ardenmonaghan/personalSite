@@ -1,7 +1,8 @@
 import Header from './header';
 import { FaLinkedin } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
+// import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+// import { FaEnvelope } from "react-icons/fa";
 
 
 const Hero = () => (
@@ -22,9 +23,9 @@ const Hero = () => (
                     <a href="https://www.linkedin.com/in/arden-monaghan-574959243" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin size={40} color="#0e76a8" />
                     </a>
-                    <a href="https://www.instagram.com/ardenmonaghan" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://www.instagram.com/ardenmonaghan" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={40} color="#E4405F" />
-                    </a>
+                    </a> */}
                     <a href="https://github.com/ardenmonaghan" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={40} color="#181717" />
                     </a>

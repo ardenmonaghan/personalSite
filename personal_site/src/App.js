@@ -1,6 +1,8 @@
 import Hero from './hero';
 import AboutMe from './about-me';
 import Projects from './projects';
+import Footer from './footer';
+
 
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
      <Hero />
      <AboutMe />
      <Projects />
+     <Footer />
     </div>
   );  
 }
