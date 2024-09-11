@@ -11,7 +11,7 @@ const Footer =() => {
             <div>
                 
 
-                  <h1 className="footer-h1">Contact Me</h1>
+                  <h1 className="footer-h1" id="contact">Contact Me</h1>
                   <p className="footer-p">You Can Reach Me Through Github, LinkedIn, or Email:</p>
                 <div className="footer-links font-size-p">
                   <a className="footer-link"href="https://github.com/ardenmonaghan" >🔗 Github: github.com/ardenmonaghan</a>

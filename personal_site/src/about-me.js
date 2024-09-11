@@ -19,7 +19,7 @@ import { FaReact } from 'react-icons/fa';
 
 const AboutMe = () => {
   return (
-    <section className="about-me">
+    <section className="about-me" id="about">
         <div className='container color'>
             <h2 className='color-pink'>Overview</h2>
             <h1 className='font-size-h1 about-me-title'>About Me</h1>

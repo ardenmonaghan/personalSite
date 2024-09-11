@@ -27,10 +27,10 @@ const Header = () => {
                     <a className="header-name" href="#">Arden Monaghan</a>
                     <ul className="nav-links">
                         <li>
-                            <a className="header-font" href="#">About</a>
+                            <a className="header-font" href="#about">About</a>
                         </li>
                         <li>
-                            <a className="header-font" href="#">Contact</a>
+                            <a className="header-font" href="#contact">Contact</a>
                         </li>
                         <li>
                             <a className="header-font header-resume" href="/resume.pdf" download="My_Resume.pdf" onClick={handleClick}>Resume</a>
