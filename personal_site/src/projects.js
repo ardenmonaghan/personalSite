@@ -3,6 +3,9 @@ import scienceImg from './images/science.png';
 import posImg from './images/pos.png';
 import autoRecruiterImg from './images/background.jpg';
 
+import { motion } from 'framer-motion';
+import { fadeIn, opacity } from './utils/motion';
+
 
 
 const Project = ({ name, description, time, link, image, tags}) => {
@@ -57,9 +60,9 @@ const Projects = () => {
       id: 3,
       name: 'AutoRecruiter',
       time:'Sept 2024 - Present',
-      description: 'AutoRecruiter is a software that utilizes AI to help Science Students fill out their applications faster using autocomplete tools',
-      link: 'https://project1.com',
-      tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP"],
+      description: 'AutoRecruiter is a software that utilizes AI to help UOFA Science Students fill out their applications faster using autocomplete tools, resume checkers to see compatibility with job postings and career advice',
+      link: 'https://github.com/orgs/AutoRecruiter',
+      tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP", "Python"],
       image: autoRecruiterImg
       
     },
@@ -79,15 +82,26 @@ const Projects = () => {
   return (
     <section className="projects">
         <div className='container'>
+            <motion.div variants={fadeIn('up', 'spring', 0.2, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='project-title'>
             <h2 className='color-pink'>My Work</h2>
             <h1 className='font-size-h1 color '>Projects</h1> 
-            <div className='project-description'>
-            <p className='color font-size-p project-paragraph'>This portfolio showcases a variety of projects that demonstrate my technical expertise and document my growth as a programmer. Each project reflects my ability to solve complex problems, work with a wide range of technologies, and successfully manage projects from initial concept to final delivery.</p>
-            </div>
+            </motion.div>
+            <motion.div variants={fadeIn('left', 'spring', 0.4, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='project-description'>
+              <p className='color font-size-p project-paragraph'>This portfolio showcases a variety of projects that demonstrate my technical expertise and document my growth as a programmer. Each project reflects my ability to solve complex problems, work with a wide range of technologies, and successfully manage projects from initial concept to final delivery.</p>
+            </motion.div>
             <div className='project-grid'>
+              <motion.div variants={opacity(0.5,1)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[0].name} description={projects[0].description} time={projects[0].time} link={projects[0].link} image={projects[0].image} tags={projects[0].tags}/>
+              </motion.div>
+              <motion.div variants={opacity(0.75,1.5)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[1].name} description={projects[1].description} time={projects[1].time} link={projects[1].link} image={projects[1].image} tags={projects[1].tags}/>
+              </motion.div>
+              <motion.div variants={opacity(1,2)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/>
+              </motion.div>
+                {/* <Project name={projects[0].name} description={projects[0].description} time={projects[0].time} link={projects[0].link} image={projects[0].image} tags={projects[0].tags}/>
+                <Project name={projects[1].name} description={projects[1].description} time={projects[1].time} link={projects[1].link} image={projects[1].image} tags={projects[1].tags}/>
+                <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/> */}
             </div>
             {/* <div className='project-grid'>
               <Project name={projects[3].name} description={projects[3].description} time={projects[3].time} link={projects[3].link} image={projects[3].image} tags={projects[3].tags}/>

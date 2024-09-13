@@ -14,11 +14,6 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    const handleClick = (e) => {
-        e.preventDefault();
-        console.log("Downloading resume");
-    };
     
     return (
         <header className={isSticky ? 'sticky' : ''}>
@@ -33,7 +28,7 @@ const Header = () => {
                             <a className="header-font" href="#contact">Contact</a>
                         </li>
                         <li>
-                            <a className="header-font header-resume" href="/resume.pdf" download="My_Resume.pdf" onClick={handleClick}>Resume</a>
+                            <a className="header-font header-resume" href="/resume.pdf" download="My_Resume.pdf">Resume</a>
                         </li>
                     </ul>
                 </div>

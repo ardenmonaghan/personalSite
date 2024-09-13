@@ -4,6 +4,8 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 // import { FaEnvelope } from "react-icons/fa";
 
+import { motion } from 'framer-motion';
+import { opacity } from './utils/motion';
 
 const Hero = () => (
   <section className="hero">
@@ -11,7 +13,7 @@ const Hero = () => (
       <div className="hero-container">  
         <div className="container">
         <Header />
-            <div className="hero-content">   
+            <motion.div variants={opacity(0.2, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className="hero-content">   
                 <div className="hero-image">
                     <img className="hero-profile-image glow-effect" src={require('./images/arden.png')} alt="Arden Monaghan" />
                 </div>
@@ -23,15 +25,12 @@ const Hero = () => (
                     <a href="https://www.linkedin.com/in/arden-monaghan-574959243" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin size={40} color="#0e76a8" />
                     </a>
-                    {/* <a href="https://www.instagram.com/ardenmonaghan" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram size={40} color="#E4405F" />
-                    </a> */}
                     <a href="https://github.com/ardenmonaghan" target="_blank" rel="noopener noreferrer">
                         <FaGithub size={40} color="#181717" />
                     </a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
       </div>
   </section>

@@ -8,6 +8,9 @@ import { FaDocker } from 'react-icons/fa';
 import { DiAws } from 'react-icons/di';
 import { FaReact } from 'react-icons/fa';
 
+import { motion } from 'framer-motion';
+import { fadeIn, TextVariant } from './utils/motion';
+
 
 
 
@@ -21,17 +24,19 @@ const AboutMe = () => {
   return (
     <section className="about-me" id="about">
         <div className='container color'>
+            <motion.div variants={fadeIn('right', 'spring', 0.2, 1)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
             <h2 className='color-pink'>Overview</h2>
             <h1 className='font-size-h1 about-me-title'>About Me</h1>
+            </motion.div>
             <div className='about-me-grid'>
 
             <div className='about-me-text'>
 
-            <p className='font-size-p'>Welcome to my page! I'm Arden Monaghan, a 20-year-old Computing Science student at the University of Alberta with a deep passion for software development. My focus is on integrating artificial intelligence and machine learning into innovative solutions. I am constantly driven by the desire to expand my knowledge, stay at the forefront of technology, and contribute to the growth of others in the process. </p>
-            <p className='font-size-p'>I pride myself on my ability to break down complex problems into manageable components, which helps me tackle challenges systematically and efficiently. My strong collaboration skills ensure that I can work seamlessly with teammates, fostering clear communication and aligning our efforts to meet objectives effectively.</p>
-            <p className='font-size-p'>Outside of software development, I enjoy staying active through various sports, diving into books, and exploring exciting travel destinations to satisfy my curiosity for the world.</p>
+            <motion.p variants={fadeIn('up', 'spring', 0.2, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='font-size-p'>Welcome to my page! I'm Arden Monaghan, a 20-year-old Computing Science student at the University of Alberta with a deep passion for software development. My focus is on integrating artificial intelligence and machine learning into innovative solutions. I am constantly driven by the desire to expand my knowledge, stay at the forefront of technology, and contribute to the growth of others in the process. </motion.p>
+            <motion.p variants={fadeIn('up', 'spring', 0.3, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='font-size-p'>I pride myself on my ability to break down complex problems into manageable components, which helps me tackle challenges systematically and efficiently. My strong collaboration skills ensure that I can work seamlessly with teammates, fostering clear communication and aligning our efforts to meet objectives effectively.</motion.p>
+            <motion.p variants={fadeIn('up', 'spring', 0.4, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='font-size-p'>Outside of software development, I enjoy staying active through various sports, diving into books, and exploring exciting travel destinations to satisfy my curiosity for the world.</motion.p>
             </div>
-            <div className='about-me-skills'>
+            <motion.div variants={fadeIn('left', 'spring', 0.2, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='about-me-skills'>
                 <ul className='about-me-skills-list'>
                     <li>
                         <div className='about-me-skills-item'>
@@ -84,7 +89,7 @@ const AboutMe = () => {
                         </div>
                     </li>
                 </ul>
-            </div>
+            </motion.div>
             </div>
         </div>
     </section>
