@@ -1,7 +1,8 @@
 import React from 'react';
 import scienceImg from './images/science.png';
 import posImg from './images/pos.png';
-import autoRecruiterImg from './images/background.jpg';
+import autoRecruiterImg from './images/AutoRecruiter.png';
+import localParseImg from './images/background.jpg';
 
 import { motion } from 'framer-motion';
 import { fadeIn, opacity } from './utils/motion';
@@ -61,22 +62,20 @@ const Projects = () => {
       name: 'AutoRecruiter',
       time:'Sept 2024 - Present',
       description: 'AutoRecruiter is a software that utilizes AI to help UOFA Science Students fill out their applications faster using autocomplete tools, resume checkers to see compatibility with job postings and career advice',
-      link: 'https://github.com/orgs/AutoRecruiter',
+      link: 'https://www.linkedin.com/company/autorecruiter-ualberta',
       tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP", "Python"],
       image: autoRecruiterImg
       
     },
-    // {
-    //   id: 4,
-    //   name: 'Personal Website',
-    //   time:'Sept 2024 - Present',
-    //   description: 'This personal website is a showcase of my skills in HTML, CSS, JS and React. Taking use of my frontend skills to create a website that is both functional and aesthetically pleasing.',
-    //   link: 'https://project1.com',
-    //   tags: ["React", "HTML", "CSS"],
-    //   image: autoRecruiterImg
-      
-    // }
-    // Add more projects as needed
+    {
+      id: 4,
+      name: 'LocalParse',
+      time:'Sept 2024 - Present',
+      description: 'LocalParse is a software that Utilizes LLMs to parse through large documents and quickly retrieve + summarize information without compromising on privacy. Uses Downloadable Software GUI Interface for Easy Access and Usability',
+      link: 'https://github.com/ardenmonaghan/LocalParse-ML',
+      tags: ["Python", "Ollama", "Langchain", "PyQt6", "SQLite"],
+      image: localParseImg
+    }
   ];
 
   return (
@@ -99,13 +98,10 @@ const Projects = () => {
               <motion.div variants={opacity(1,2)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/>
               </motion.div>
-                {/* <Project name={projects[0].name} description={projects[0].description} time={projects[0].time} link={projects[0].link} image={projects[0].image} tags={projects[0].tags}/>
-                <Project name={projects[1].name} description={projects[1].description} time={projects[1].time} link={projects[1].link} image={projects[1].image} tags={projects[1].tags}/>
-                <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/> */}
+              <motion.div variants={opacity(1.25,2.5)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
+                <Project name={projects[3].name} description={projects[3].description} time={projects[3].time} link={projects[3].link} image={projects[3].image} tags={projects[3].tags}/>
+              </motion.div>
             </div>
-            {/* <div className='project-grid'>
-              <Project name={projects[3].name} description={projects[3].description} time={projects[3].time} link={projects[3].link} image={projects[3].image} tags={projects[3].tags}/>
-            </div> */}
         </div>
     </section>
   );

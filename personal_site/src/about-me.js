@@ -11,15 +11,6 @@ import { FaReact } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn, TextVariant } from './utils/motion';
 
-
-
-
-
-
-
-
-
-
 const AboutMe = () => {
   return (
     <section className="about-me" id="about">

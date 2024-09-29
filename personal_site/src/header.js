@@ -28,7 +28,7 @@ const Header = () => {
                             <a className="header-font" href="#contact">Contact</a>
                         </li>
                         <li>
-                            <a className="header-font header-resume" href="/resume.pdf" download="My_Resume.pdf">Resume</a>
+                            <a className="header-font header-resume" href="/resume.pdf" download="ArdenMonaghan-Resume-2024.pdf">Resume</a>
                         </li>
                     </ul>
                 </div>
