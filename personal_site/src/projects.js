@@ -42,7 +42,7 @@ const Projects = () => {
       name: 'MentorMatch UAlberta',
       time: 'April 2024 - Sept 2024',
       description: 'MentorMatch Ualberta is a Software that utilizes Natural Language Processing Models to help students in the Science Mentorship Program at UAlberta be matched with mentors. Optimizing the time significantly for Program Coordinators and Mentors.',
-      link: 'https://project1.com',
+      link: 'https://github.com/MentorMatch1',
       tags: ["Python", "PyQT", "Ollama", "NLP", "Docker"],
       image: scienceImg
       
