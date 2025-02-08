@@ -2,7 +2,8 @@ import React from 'react';
 import scienceImg from './images/science.png';
 import posImg from './images/pos.png';
 import localParseImg from './images/background.jpg';
-
+import portfolioImg from "./images/portfolio.png"
+import neuralNetworkImg from "./images/neural_network.png"
 import { motion } from 'framer-motion';
 import { fadeIn, opacity } from './utils/motion';
 
@@ -54,16 +55,6 @@ const Projects = () => {
       image: posImg,
       tags: ["Python", "HuggingFace", "Sentiment Analysis", "PRAW", "SeaBorn"]
     },
-    // {
-    //   id: 3,
-    //   name: 'AutoRecruiter',
-    //   time:'Sept 2024 - Present',
-    //   description: 'AutoRecruiter is a software that utilizes AI to help UOFA Science Students fill out their applications faster using autocomplete tools, resume checkers to see compatibility with job postings and career advice',
-    //   link: 'https://www.linkedin.com/company/autorecruiter-ualberta',
-    //   tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP", "Python"],
-    //   image: autoRecruiterImg
-      
-    // },
     {
       id: 3,
       name: 'LocalParse',
@@ -72,6 +63,24 @@ const Projects = () => {
       link: 'https://github.com/ardenmonaghan/LocalParse-ML',
       tags: ["Python", "Ollama", "Langchain", "PyQt6", "SQLite"],
       image: localParseImg
+    },
+    {
+      id: 4,
+      name: 'Scratch Neural Network',
+      time:'December 2024',
+      description: 'This is a neural network that I built from scratch only using Numpy and Linear Algebra to perform forward propagation and backpropagation. It explains the fundementals of how neural networks work and how I was able to implement it on the MNIST dataset for classifying images 1-9 The model achieves >90% Accuracy on 50 Epochs. Additionally it includes other implementations of Neural Networks. Including using a CNN via PyTorchto classify images of many different objects',
+      link: 'https://github.com/ardenmonaghan/Neural_Network_Test',
+      tags: ["Pytorch", "CNNs", "Neural Networks", "Machine Learning", "Python", "Numpy", "Matplotlib"],
+      image: neuralNetworkImg
+    },
+    {
+      id: 5,
+      name: 'Portfolio Website',
+      time:'August 2024 - Present',
+      description: 'This website is a portfolio of my work and a showcase of my skills. It is built using React, Framer Motion, and CSS. It is hosted on Vercel.',
+      link: 'https://github.com/ardenmonaghan/personalSite',
+      tags: ["HTML", "CSS", "JavaScript", "ReactJS", "Vercel"],
+      image: portfolioImg
     }
   ];
 
@@ -94,6 +103,12 @@ const Projects = () => {
               </motion.div>
               <motion.div variants={opacity(1,2)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/>
+              </motion.div>
+              <motion.div variants={opacity(1.25,2.5)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
+                <Project name={projects[3].name} description={projects[3].description} time={projects[3].time} link={projects[3].link} image={projects[3].image} tags={projects[3].tags}/>
+              </motion.div>
+              <motion.div variants={opacity(1.5,3)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
+                <Project name={projects[4].name} description={projects[4].description} time={projects[4].time} link={projects[4].link} image={projects[4].image} tags={projects[4].tags}/>
               </motion.div>
             </div>
         </div>

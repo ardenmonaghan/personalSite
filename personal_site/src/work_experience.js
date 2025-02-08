@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 
 const workExperience = () => {
     return (
-        <div>
-            <h1>Work Experience</h1>
+        <section className="about-me" id="about">
+        <div className='container color'>
+            <h1 className='color'>Work Experience</h1>  
         </div>
+    </section>
     );
 };
+
+export default workExperience;
