@@ -1,7 +1,6 @@
 import React from 'react';
 import scienceImg from './images/science.png';
 import posImg from './images/pos.png';
-import autoRecruiterImg from './images/AutoRecruiter.png';
 import localParseImg from './images/background.jpg';
 
 import { motion } from 'framer-motion';
@@ -45,8 +44,6 @@ const Projects = () => {
       link: 'https://github.com/MentorMatch1',
       tags: ["Python", "PyQT", "Ollama", "NLP", "Docker"],
       image: scienceImg
-      
-      
     },
     {
       id: 2,
