@@ -57,18 +57,18 @@ const Projects = () => {
       image: posImg,
       tags: ["Python", "HuggingFace", "Sentiment Analysis", "PRAW", "SeaBorn"]
     },
+    // {
+    //   id: 3,
+    //   name: 'AutoRecruiter',
+    //   time:'Sept 2024 - Present',
+    //   description: 'AutoRecruiter is a software that utilizes AI to help UOFA Science Students fill out their applications faster using autocomplete tools, resume checkers to see compatibility with job postings and career advice',
+    //   link: 'https://www.linkedin.com/company/autorecruiter-ualberta',
+    //   tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP", "Python"],
+    //   image: autoRecruiterImg
+      
+    // },
     {
       id: 3,
-      name: 'AutoRecruiter',
-      time:'Sept 2024 - Present',
-      description: 'AutoRecruiter is a software that utilizes AI to help UOFA Science Students fill out their applications faster using autocomplete tools, resume checkers to see compatibility with job postings and career advice',
-      link: 'https://www.linkedin.com/company/autorecruiter-ualberta',
-      tags: ["React", "Express JS", "Google Extensions", "Llama 3", "NLP", "Python"],
-      image: autoRecruiterImg
-      
-    },
-    {
-      id: 4,
       name: 'LocalParse',
       time:'Sept 2024 - Present',
       description: 'LocalParse is a software that Utilizes LLMs to parse through large documents and quickly retrieve + summarize information without compromising on privacy. Uses Downloadable Software GUI Interface for Easy Access and Usability',
@@ -97,9 +97,6 @@ const Projects = () => {
               </motion.div>
               <motion.div variants={opacity(1,2)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
                 <Project name={projects[2].name} description={projects[2].description} time={projects[2].time} link={projects[2].link} image={projects[2].image} tags={projects[2].tags}/>
-              </motion.div>
-              <motion.div variants={opacity(1.25,2.5)} initial="hidden"  whileInView="show" viewport={{ once: true }}>
-                <Project name={projects[3].name} description={projects[3].description} time={projects[3].time} link={projects[3].link} image={projects[3].image} tags={projects[3].tags}/>
               </motion.div>
             </div>
         </div>
