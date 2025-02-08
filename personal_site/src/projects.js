@@ -68,7 +68,7 @@ const Projects = () => {
       id: 4,
       name: 'Scratch Neural Network',
       time:'December 2024',
-      description: 'This is a neural network that I built from scratch only using Numpy and Linear Algebra to perform forward propagation and backpropagation. It explains the fundementals of how neural networks work and how I was able to implement it on the MNIST dataset for classifying images 1-9 The model achieves >90% Accuracy on 50 Epochs. Additionally it includes other implementations of Neural Networks. Including using a CNN via PyTorchto classify images of many different objects',
+      description: 'This is a neural network that I built from scratch only using Numpy and Linear Algebra to perform forward propagation and backpropagation. It explains the fundementals of how neural networks work and how I was able to implement it on the MNIST dataset for classifying images 1-9 The model achieves >90% Accuracy on 50 Epochs. Additionally it includes other implementations of Neural Networks. Including using a CNN via PyTorch to classify images of many different objects',
       link: 'https://github.com/ardenmonaghan/Neural_Network_Test',
       tags: ["Pytorch", "CNNs", "Neural Networks", "Machine Learning", "Python", "Numpy", "Matplotlib"],
       image: neuralNetworkImg
