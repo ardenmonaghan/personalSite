@@ -1,5 +1,3 @@
-
-
 header {
     z-index: 100;
     margin-left: auto;
@@ -303,4 +301,182 @@ header {
     background-color: #333;
     padding: 2rem 2rem;
     border-radius: 1rem;
+}
+
+/* Work Experience */
+
+.vertical-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Vertical line */
+.vertical-timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-entry {
+    position: relative;
+    width: 45%; /* Reduced width to prevent overlap */
+    padding: 20px 40px;
+    margin-bottom: 120px;
+}
+
+/* Timeline nodes/circles */
+.timeline-entry::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #090911;
+    border: 2px solid white;
+    border-radius: 50%;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Circle icon/image container */
+.timeline-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Left entries */
+.timeline-entry.left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-entry.left::after,
+.timeline-entry.left .timeline-icon {
+    right: -8.2rem;
+    transform: translateY(-50%);
+}
+
+/* Right entries */
+.timeline-entry.right {
+    left: 55%; /* Adjusted to prevent overlap */
+    text-align: left;
+}
+
+.timeline-entry.right::after,
+.timeline-entry.right .timeline-icon {
+    left: -8.2rem;
+    transform: translateY(-50%);
+}
+
+.timeline-content {
+    background: rgba(20, 20, 35, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Date display */
+.work-date {
+    position: absolute;
+    color: #8892b0;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    top: -30px; /* Move date above the content */
+    transform: none;
+}
+
+.timeline-entry.left .work-date {
+    right: 0;
+}
+
+.timeline-entry.right .work-date {
+    left: 0;
+}
+
+.timeline-content h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.timeline-content h4 {
+    color: #8892b0;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.timeline-content .work-responsibilities {
+    list-style-type: none;
+    margin-left: 0;
+    color: #8892b0;
+}
+
+.timeline-content .work-responsibilities li {
+    color: #8892b0;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .vertical-timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-entry {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        text-align: left;
+    }
+    
+    .timeline-entry.right {
+        left: 0;
+    }
+    
+    .timeline-entry::after,
+    .timeline-icon {
+        left: 12px !important;
+        width: 30px;
+        height: 30px;
+    }
+
+    .timeline-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .work-date {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 1rem;
+    }
 }
