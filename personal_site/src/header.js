@@ -25,6 +25,9 @@ const Header = () => {
                             <a className="header-font" href="#about">About</a>
                         </li>
                         <li>
+                            <a className="header-font" href="#work">Experience</a>
+                        </li>
+                        <li>
                             <a className="header-font" href="#contact">Contact</a>
                         </li>
                         <li>
