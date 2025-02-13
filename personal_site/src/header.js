@@ -22,10 +22,10 @@ const Header = () => {
                     <a className="header-name" href="#">Arden Monaghan</a>
                     <ul className="nav-links">
                         <li>
-                            <a className="header-font" href="#about">About</a>
+                            <a className="header-font" href="#work">Experience</a>
                         </li>
                         <li>
-                            <a className="header-font" href="#work">Experience</a>
+                            <a className="header-font" href="#projects">Projects</a>
                         </li>
                         <li>
                             <a className="header-font" href="#contact">Contact</a>

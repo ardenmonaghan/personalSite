@@ -114,7 +114,7 @@ const WorkExperience = () => {
               whileInView="show" 
               viewport={{ once: true }}
             >
-              <p className="work-date">Nov 2020 - Aug 2023</p>
+              <p className="work-date">April 2020 - Aug 2023</p>
               <div className="timeline-content">
                 <h3>Bakery Clerk</h3>
                 <h4>Safeway</h4>
@@ -129,11 +129,8 @@ const WorkExperience = () => {
               </div>
             </motion.div>
           </div>
-             
-          
-        </div>
-        
-        
+                     
+        </div>    
         
       </div>
     </section>

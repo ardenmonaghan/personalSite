@@ -85,7 +85,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
         <div className='container'>
             <motion.div variants={fadeIn('up', 'spring', 0.2, 1)}  initial="hidden"  whileInView="show" viewport={{ once: true }} className='project-title'>
             <h2 className='color-pink'>My Work</h2>
