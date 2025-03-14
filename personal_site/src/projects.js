@@ -41,7 +41,7 @@ const Projects = () => {
       id: 1,
       name: 'MentorMatch UAlberta',
       time: 'April 2024 - Sept 2024',
-      description: 'MentorMatch UAlberta is a Software that utilizes NLP Models to help students in the Science Mentorship Program at UAlberta be matched with mentors. Optimizing the time significantly for Program Coordinators and Mentors.',
+      description: 'MentorMatch UAlberta is a Software that utilizes an LLM integrated Algorithm which helps the Science Mentorship Program match mentors with mentees. Optimizing the time significantly for program coordinators and mentors from multiple days to minutes.',
       link: 'https://github.com/MentorMatch1',
       tags: ["Python", "PyQt6", "Ollama", "NLP", "Docker"],
       image: scienceImg
@@ -50,7 +50,7 @@ const Projects = () => {
       id: 2,
       name: 'Moodify',
       time:'Jan 2025 - Mar 2025',
-      description: 'Moodify is a full stack Android application that follows a Twitter style design. Some features include a user following system, a user feed for individuals you currently follow, and geolocation based moods to see how people are feeling in your area. CMPUT301 Winter 2025 Group Project.',
+      description: 'Moodify is a full stack Android application that follows a Twitter style design. Some features include a user following system, a user feed for individuals you currently follow, and geolocation based moods to see how people are feeling in your area. CMPUT 301 Winter 2025 Group Project.',
       link: 'https://github.com/ardenmonaghan/',
       tags: ["Android Studio", "Java", "Firebase", "Git"],
       image: moodifyImg
@@ -59,7 +59,7 @@ const Projects = () => {
       id: 3,
       name: 'NHL Positivity Index',
       time: 'Sept 2023 - Jan 2024',
-      description: "This project involved conducting sentiment analysis on data from the NHL subreddit to measure the positivity associated with each of the 32 NHL teams by fine-tuning the cardiffnlp/twitter-roberta-base-sentiment-latest model specifically on hockey-related sentiment data.",
+      description: "This project involved conducting sentiment analysis on data from the NHL subreddits to measure the positivity associated with each of the 32 NHL teams by fine-tuning the cardiffnlp/twitter-roberta-base-sentiment-latest model specifically on hockey-related sentiment data.",
       link: 'https://uais.dev/projects/nhl-positivity-index/',
       image: posImg,
       tags: ["Python", "HuggingFace", "Sentiment Analysis", "PRAW", "Matplotlib"]
@@ -68,7 +68,7 @@ const Projects = () => {
       id: 4,
       name: 'Scratch Neural Network',
       time:'December 2024',
-      description: 'This is a neural network that I built from scratch only using Numpy and Linear Algebra to perform forward propagation and backpropagation. It explains the fundementals of how neural networks work and how I was able to implement it on the MNIST dataset for classifying images 1-9 The model achieves >90% Accuracy on 50 Epochs. Additionally it includes a CNN via PyTorch to classify images of many different objects.',
+      description: 'This is a neural network built from scratch only using Numpy and Linear Algebra to perform forward propagation and backpropagation. It explains the fundementals of how neural networks work and how I was able to implement it on the MNIST dataset for classifying images 1-9 The model achieves >90% Accuracy on 50 Epochs. Additionally it includes a CNN via PyTorch to classify images of many different objects.',
       link: 'https://github.com/ardenmonaghan/Neural_Network_Test',
       tags: ["Pytorch", "CNNs", "Neural Networks", "Machine Learning", "Python", "Numpy", "Matplotlib"],
       image: neuralNetworkImg
