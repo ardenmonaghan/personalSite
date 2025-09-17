@@ -35,7 +35,7 @@ const WorkExperience = () => {
               whileInView="show" 
               viewport={{ once: true }}
             >
-              <p className="work-date">Jan 2025 - Present</p>
+              <p className="work-date">Jan 2025 -  April 2025</p>
               <div className="timeline-content">
                 <h3>CV Research Assistant</h3>
                 <h4>ECE Department, University of Alberta</h4>
