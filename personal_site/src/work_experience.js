@@ -19,10 +19,36 @@ const WorkExperience = () => {
         >
           <h2 className="color-pink">What I have done so far</h2>
           <h1 className="font-size-h1 about-me-title">Work Experience</h1>
-        </motion.div>
         
+        </motion.div>
+       
         <div className="vertical-timeline">
-    
+        <div className="timeline-entry right">  
+            <div className="timeline-icon">
+              <img src={litLifeImage} alt="litLife" />
+            </div>
+            <motion.div 
+              variants={fadeIn('left', 'spring', 0.2, 1)} 
+              initial="hidden" 
+              whileInView="show" 
+              viewport={{ once: true }}
+            >
+              <p className="work-date">Nov 2024 - Present</p>
+              <div className="timeline-content">
+                <h3>Front End Developer</h3>
+                <h4>LitLife AI</h4>
+                <ul className="work-responsibilities">
+                  <li>
+                    Developing the Frontend for LitLife AI using Flutter and Supabase to connect widgets to backend queries. 
+                  </li>
+                  <li>
+                    Contributing to the development of a secure user interaction system using Supabase Row Level Security. 
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+          </div>        
+
           <div className="timeline-entry left">
         
             <div className="timeline-icon">
@@ -87,8 +113,7 @@ const WorkExperience = () => {
               variants={fadeIn('right', 'spring', 0.2, 1)} 
               initial="hidden" 
               whileInView="show" 
-              viewport={{ once: true }}
-            >
+              viewport={{ once: true }}>
               <p className="work-date">April 2024 - Present</p>
               <div className="timeline-content">
                 <h3>Secretary</h3>
